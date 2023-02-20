@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MembershipActivity">
+
+    <!-- others MemberShip -->
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/DriverMemberShip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/castoro"
+            android:textStyle="bold"
+            android:text="@string/please_select_the_plan_please"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/others_membership"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="25dp"
+            android:layout_margin="15dp">
+
+            <RelativeLayout
+                android:background="@color/gold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/member"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/castoro"
+                    android:textColor="@color/black"
+                    android:text="@string/gold_membership"/>
+
+                <TextView
+                    android:id="@+id/text31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/member"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/castoro"
+                    android:text="Enlisting Trucks"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text31"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/castoro"
+                    android:gravity="center_vertical"
+                    android:text="₹ 500"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/castoro"
+            android:textColor="@color/black"
+            android:text="@string/have_a_great_time_with_roadpilot"/>
+
+
+    </LinearLayout>
+
+<!--    Driver MemberShip-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/castoro"
+            android:textStyle="bold"
+            android:text="@string/please_select_the_plan_please"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/goldMembership"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="25dp"
+            android:layout_margin="15dp">
+
+            <RelativeLayout
+                android:background="@color/gold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/castoro"
+                    android:text="@string/gold_membership"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/castoro"
+                    android:text="@string/insurance_n_discount_on_food_at_dhaba_n_get_24_7_costumercare_support"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_below="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/castoro"
+                    android:text="₹ 2950"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/silverMembership"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="25dp"
+            android:layout_margin="15dp">
+
+            <RelativeLayout
+                android:background="@color/silver"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/silver"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/castoro"
+                    android:textColor="@color/black"
+                    android:text="@string/silver_membership"/>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/silver"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/castoro"
+                    android:text="@string/get_the_access_to_apply_job_n_get_24_7_costumercare_support"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_below="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/castoro"
+                    android:text="₹ 250"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/castoro"
+            android:textColor="@color/black"
+            android:text="@string/have_a_great_time_with_roadpilot"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

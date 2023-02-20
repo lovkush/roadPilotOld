@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/profile"
+        android:title="@string/profile"/>
+
+    <item android:id="@+id/searsh"
+        android:icon="@drawable/daba"
+        android:title="@string/food"/>
+
+    <item android:id="@+id/swipe"
+        android:icon="@drawable/job"
+        android:title="@string/jobs"/>
+
+    <item android:id="@+id/news"
+        android:icon="@drawable/news"
+        android:title="@string/news"/>
+
+</menu>

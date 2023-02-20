@@ -1,0 +1,126 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.lucky.roadpilot"
+        minSdk 21
+        targetSdk 30
+        versionCode 18
+        versionName "1.2"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+        density {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+        abi {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+    }
+}
+
+dependencies {
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'com.razorpay:checkout:1.6.12'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.1'
+    implementation 'com.google.android.gms:play-services-vision-common:19.1.3'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    implementation 'com.google.android.material:material:1.4.0'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+
+    implementation 'com.airbnb.android:lottie:3.4.3'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+//    implementation 'com.github.mohammadatif:Animatoo:master'
+
+    implementation 'com.lorentzos.swipecards:library:1.0.9@aar'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //    ReadMore
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
+
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+
+    // FirebaseUI for Cloud Firestore
+    implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
+
+    // FirebaseUI for Firebase Auth
+    implementation 'com.firebaseui:firebase-ui-auth:7.1.1'
+    implementation 'androidx.browser:browser:1.4.0'
+
+    // FirebaseUI for Cloud Storage
+    implementation 'com.firebaseui:firebase-ui-storage:7.1.1'
+    implementation 'com.google.firebase:firebase-analytics:20.0.0'
+    implementation 'com.google.firebase:firebase-firestore:24.0.0'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-core:20.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+
+    // imagePicker
+    //noinspection UseOfBundledGooglePlayServices
+//    implementation 'com.google.android.gms:play-services:12.0.1'
+        api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
+    implementation 'it.sephiroth.android.library.imagezoom:imagezoom:2.3.0'
+    implementation 'com.ablanco.zoomy:zoomy:1.1.0'
+
+    implementation 'com.sun.mail:android-mail:1.6.2'
+    implementation 'com.sun.mail:android-activation:1.6.2'
+
+//    implementation 'com.github.1902shubh:SendMail:1.0.0'
+
+
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'

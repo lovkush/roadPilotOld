@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/yellow"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+<!--    Owner Edit-->
+
+<!--    <RelativeLayout-->
+<!--        android:visibility="visible"-->
+<!--        android:id="@+id/owner"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/text1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--        <TextView-->
+<!--            style="@style/viewParent.headerText.NoMode"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="5"-->
+<!--            android:fontFamily="@font/comfortaa_light"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/update_profile"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#689F38"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/img"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_below="@id/text1"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:cardCornerRadius="75dp"-->
+<!--            app:cardElevation="25dp"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/text1"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/text1">-->
+
+<!--            <ImageView-->
+<!--                android:padding="2dp"-->
+<!--                android:id="@+id/user_image"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/add_img"-->
+<!--                android:backgroundTint="@color/appcolor"-->
+<!--                android:contentDescription="@string/todo"-->
+<!--                android:scaleType="fitXY"-->
+<!--                tools:ignore="ImageContrastCheck" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_below="@id/img"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/img">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="780dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--        <TextView-->
+<!--            style="@style/viewParent.headerText.NoMode"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="5"-->
+<!--            android:fontFamily="@font/comfortaa_light"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/update_your_info"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#689F38"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/IName"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:autofillHints="name"-->
+<!--                android:hint="@string/individual_name"-->
+<!--                android:inputType="text"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/black" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/CName"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:autofillHints="name"-->
+<!--                android:hint="@string/company_name"-->
+<!--                android:inputType="text"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/black" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/address"-->
+<!--                android:hint="@string/address"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:autofillHints="address"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:inputType="text" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/phone"-->
+<!--                android:hint="@string/contact_number"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:autofillHints="phone"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:inputType="number"-->
+<!--                tools:ignore="TextFields" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/Owner_Submit"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:fontFamily="@font/castoro"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:background="@drawable/background_home"-->
+<!--            android:textColor="@color/appcolor"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:text="@string/update"/>-->
+<!--    </LinearLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+<!--    </RelativeLayout>-->
+
+<!--    Driver Update-->
+
+    <RelativeLayout
+        android:id="@+id/Downer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:id="@+id/Dtext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="4"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/update"
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="center"
+            android:text="@string/update_profile"
+            android:textAlignment="center"
+            android:textColor="#689F38"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="4"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Dimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Dtext1"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            app:cardCornerRadius="75dp"
+            app:cardElevation="25dp"
+            app:layout_constraintStart_toStartOf="@+id/Dtext1"
+            app:layout_constraintTop_toBottomOf="@+id/Dtext1">
+
+            <ImageView
+                android:id="@+id/Duser_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/appcolor"
+                android:contentDescription="@string/todo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_img"
+                tools:ignore="ImageContrastCheck" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/Dimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dimg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="4"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/updadte1"
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="center"
+            android:text="@string/update_your_info"
+            android:textAlignment="center"
+            android:textColor="#689F38"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="4"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_home">
+
+            <EditText
+                android:id="@+id/IName_Dri"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:hint="@string/individual_name"
+                android:padding="12.5dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_home">
+
+            <TextView
+                android:id="@+id/Daddress"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:padding="12.5dp"
+                android:hint="@string/address"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_home">
+
+            <EditText
+                android:id="@+id/Dphone"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="phone"
+                android:hint="@string/contact_number"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:padding="12.5dp"
+                android:textColorHint="@color/black"
+                tools:ignore="TextFields" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/Driver_Submit"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/castoro"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/background_home"
+            android:textColor="@color/appcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/update"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+<!--    Mech Update-->
+
+<!--    <RelativeLayout-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/Dhaba"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/Dhtext1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--        <TextView-->
+<!--            style="@style/viewParent.headerText.NoMode"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="5"-->
+<!--            android:fontFamily="@font/comfortaa_light"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/update_profile"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#689F38"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_below="@id/Dhtext1"-->
+<!--        android:id="@+id/Dhimg"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        >-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_below="@id/Dhtext1"-->
+<!--            android:layout_alignStart="@+id/Dhtext1"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:cardCornerRadius="75dp"-->
+<!--            app:cardElevation="25dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/Dhtext1"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/Dhtext1">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/Dh_user_image"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/add_img"-->
+<!--                android:backgroundTint="@color/appcolor"-->
+<!--                android:contentDescription="@string/todo"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                tools:ignore="ImageContrastCheck" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="@string/owner_image"-->
+<!--                android:textAlignment="center" />-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+<!--    </LinearLayout>-->
+
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_below="@id/Dhimg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Dhimg">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="780dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--        <TextView-->
+<!--            style="@style/viewParent.headerText.NoMode"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="5"-->
+<!--            android:fontFamily="@font/comfortaa_light"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/update_your_info"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#689F38"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/IName_Da"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:autofillHints="name"-->
+<!--                android:hint="@string/owner_name"-->
+<!--                android:inputType="text"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/black" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/daddress"-->
+<!--                android:hint="@string/address"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:autofillHints="address"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:inputType="text" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@id/Dimg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/dphone"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:autofillHints="phone"-->
+<!--                android:hint="@string/contact_number"-->
+<!--                android:inputType="number"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                tools:ignore="TextFields" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/Dhada_Submit"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:fontFamily="@font/castoro"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:background="@drawable/background_home"-->
+<!--            android:textColor="@color/appcolor"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:text="@string/update"/>-->
+
+
+<!--    </LinearLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+<!--    </RelativeLayout>-->
+
+<!--&lt;!&ndash;    Mech Update&ndash;&gt;-->
+
+<!--    <RelativeLayout-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/Mname"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/text1M"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--        <TextView-->
+<!--            style="@style/viewParent.headerText.NoMode"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="5"-->
+<!--            android:fontFamily="@font/comfortaa_light"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/update_profile"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#689F38"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/Mimg"-->
+<!--        android:layout_below="@id/text1M"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center">-->
+
+
+<!--        <androidx.cardview.widget.CardView-->
+
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_alignStart="@+id/text1M"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="123dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginEnd="123dp"-->
+<!--            app:cardCornerRadius="75dp"-->
+<!--            app:cardElevation="25dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/text1M"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/text1M">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/M_image"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/add_img"-->
+<!--                android:backgroundTint="@color/appcolor"-->
+<!--                android:contentDescription="@string/todo"-->
+<!--                android:scaleType="fitXY"-->
+<!--                tools:ignore="ImageContrastCheck" />-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_below="@id/Mimg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Mimg">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="780dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/textM"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--        <TextView-->
+<!--            style="@style/viewParent.headerText.NoMode"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="5"-->
+<!--            android:fontFamily="@font/comfortaa_light"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/update_your_info"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#689F38"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:background="@color/black" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/IName_M"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:autofillHints="name"-->
+<!--                android:hint="@string/name"-->
+<!--                android:inputType="text"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/black" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/Maddress"-->
+<!--                android:hint="@string/address"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:autofillHints="address"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:inputType="text" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardElevation="15dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/background_home">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/Mphone"-->
+<!--                android:hint="@string/contact_number"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:autofillHints="phone"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:inputType="number"-->
+<!--                tools:ignore="TextFields" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/mech_Submit"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:fontFamily="@font/castoro"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:background="@drawable/background_home"-->
+<!--            android:textColor="@color/appcolor"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:text="@string/update"/>-->
+
+<!--    </LinearLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+<!--    </RelativeLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "506087719572",
+    "firebase_url": "https://ioc-2143.firebaseio.com",
+    "project_id": "ioc-2143",
+    "storage_bucket": "ioc-2143.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506087719572:android:8297b97d0c66fc03956a81",
+        "android_client_info": {
+          "package_name": "com.lokesh.roadpilot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506087719572-nni22km3lf30tvctp8bpue2jpacddfit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4WB8kSXx1ibDtMmvHanXF9gv6P6zzLX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506087719572-nni22km3lf30tvctp8bpue2jpacddfit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506087719572:android:49843108b4efbf67956a81",
+        "android_client_info": {
+          "package_name": "com.lucky.roadpilot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506087719572-32ieu03h0fsmur7m9t489721h6divnf0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lucky.roadpilot",
+            "certificate_hash": "71b1a1d4829fdf6c1b9d2e06a77eb09f257e8840"
+          }
+        },
+        {
+          "client_id": "506087719572-nni22km3lf30tvctp8bpue2jpacddfit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4WB8kSXx1ibDtMmvHanXF9gv6P6zzLX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506087719572-nni22km3lf30tvctp8bpue2jpacddfit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

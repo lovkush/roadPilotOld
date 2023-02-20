@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/yellow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jobDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/owner"
+                style="@style/viewParent.headerText.NoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:fontFamily="@font/comfortaa_light"
+                android:gravity="center"
+                android:text="@string/owner_information"
+                android:textAlignment="center"
+                android:textColor="#689F38"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Name"
+            android:textSize="18sp"
+            android:fontFamily="@font/castoro"
+            app:drawableStartCompat="@drawable/profile"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/owner_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textColor="#689F38"
+            android:textStyle="bold"
+            android:text="012345678"
+            android:textSize="18sp"
+            android:fontFamily="@font/castoro"
+            app:drawableStartCompat="@drawable/call"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/owner_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="location"
+            android:textSize="18sp"
+            android:fontFamily="@font/castoro"
+            app:drawableStartCompat="@drawable/location"
+            android:drawablePadding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+            <TextView
+                android:id="@+id/text_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/type_of_truck"
+                android:fontFamily="@font/comfortaa_bold"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"/>
+
+
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/showlangdialog"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/background_home"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dialog_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:dropDownVerticalOffset="35dp"
+                    android:gravity="center"
+                    android:popupBackground="@color/colorPrimary"
+                    android:text="No of wheels"
+                    android:textColor="@color/black" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+            <TextView
+                android:id="@+id/text_lla"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/nature_of_job"
+                android:fontFamily="@font/comfortaa_bold"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"/>
+
+
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/showlangdialoga"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/background_home"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/driver_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:dropDownVerticalOffset="35dp"
+                    android:gravity="center"
+                    android:popupBackground="@color/colorPrimary"
+                    android:text="Monthly"
+                    android:textColor="@color/black" />
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/vec"
+                style="@style/viewParent.headerText.NoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:fontFamily="@font/comfortaa_light"
+                android:gravity="center"
+                android:text="@string/vehicle_information"
+                android:textAlignment="center"
+                android:textColor="#689F38"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4"
+                android:background="@color/black" />
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_home">
+
+
+                <TextView
+                    android:id="@+id/Veh_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/castoro"
+                    android:hint="@string/ap_04_1234_andhra_to_chennai"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/appy"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/red"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/anaktoria"
+                android:gravity="center"
+                android:padding="10dp"
+                android:popupBackground="@color/colorPrimary"
+                android:text="Apply"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
